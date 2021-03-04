@@ -1,0 +1,73 @@
+// USER VARIABLES SECTION
+
+@accent: #8c7a66; // Accent Color
+@textcolor: #555555; // Text Color
+@white: #ffffff;
+
+@mainfamily: 'Montserrat', sans-serif; 
+
+// GENERAL DOCUMENT STYLES
+
+.reset();
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+.container {
+	.wrapper();
+}
+
+::placeholder {
+	// color: @gray;
+}
+
+::selection {
+	background-color: @accent;
+	color: @white;
+}
+
+input[type=text] {
+	border: 1px solid #ddd;
+	padding: 10px 15px;
+	// width: 280px;
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
+// input, button {
+// 	-webkit-appearance: none;
+// 	-moz-appearance: none;
+// 	appearance: none;
+// }
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-size: 15px;
+	// line-height: 32px;
+	min-width: 320px;
+	position: relative;
+	font-family: @mainfamily;
+	font-weight: 300;
+	color: @textcolor;
+	background-color: @white;
+}
+
+.main-content {
+	// min-height: 100vh;
+}
+
+h1 {
+	color: @white;
+	font-size: 48px;
+	letter-spacing: 0.025em;
+	font-weight: 500;
+	text-transform: uppercase;
+	.sm(font-size, 3p5x);
+}
+
