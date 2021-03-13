@@ -13,7 +13,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
 
-	<link rel="stylesheet" href="css/styles.css?v=1">
+	<link rel="stylesheet" href="css/styles.css?v=2">
 
 </head>
 
@@ -53,9 +53,9 @@
 
 			<nav class="header__bottom">
 				<ul class="header__menu">
-					<li><a href="404.html">Купить часы</a></li>
+					<li><a href="buy.html">Купить часы</a></li>
 					<li><a href="sell.html">Продать часы</a></li>
-					<li><a href="buy.html">Скупка часов</a></li>
+					<li><a href="buyup.html">Скупка часов</a></li>
 					<li><a href="contact.html">Контакты</a></li>
 				</ul>
 			</nav>
@@ -70,135 +70,340 @@
 	<!-- buy-hero -->
 	<section class="hero">
 		<div class="container">
-			<h1>Скупка швейцарских часов в Москве</h1>
+			<h1>Купить швейцарские часы  в Москве</h1>
 		</div>
 	</section>
 	<!-- end buy-hero -->
 
-	<!-- buy-feedback -->
-	<section class="feedback">
+	<!-- buy-box -->
+	<section class="box">
+		<div class="container">
 	
-		<div class="feedback__form-wrapper">
-			<div class="container">
-				<form action="#" class="feedback__form" enctype="multipart/form-data">
-					<div class="feedback__fieldset-wrapper">
-						<fieldset>
-							<div class="feedback__title">Бренд</div>
-							<select name="feedback_brand" id="feedback_brand" class="turnintodropdown">
-								<option value="A. lange & SOhne">A. lange & SOhne</option>
-								<option value="Armin Storm">Armin Storm</option>
-								<option value="Arnold & Son">Arnold & Son</option>
-								<option value="Bell & Ross">Bell & Ross</option>
-								<option value="Breguet">Breguet</option>
-								<option value="Breitling">Breitling</option>
-								<option value="Chanel">Chanel</option>
-								<option value="Corum">Corum</option>
-								<option value="Denov">Denov</option>
-								<option value="HYt">HYt</option>
-								<option value="IWC">IWC</option>
-							</select>
-						</fieldset>
-						<fieldset>
-							<div class="feedback__title">Комплектация</div>
-							<div class="feedback__checkbox-wrapper">
-								<div>
-									<input type="checkbox" name="feedback_box" id="feedback_box">
-									<label for="feedback_box">Коробка</label>
-								</div>
-								<div>
-									<input type="checkbox" name="feedback_doc" id="feedback_doc">
-									<label for="feedback_doc">Документы</label>
-								</div>
-							</div>
-						</fieldset>
-						<fieldset>
-							<div class="feedback__title">Телефон</div>
-							<input type="tel" name="feedback_tel" placeholder="+7 (xxx) xxx-xxxx" required>
-						</fieldset>
-					</div>
-					<input type="file" name="f" id="feedback__file" multiple="true" accept="image/*,image/jpeg">
-					<button type="submit" class="btn feedback__btn">Отправить заявку</button>
+			<div class="box__filter">
+				<span>Фильтры:</span>
+				<form action="#">
+					<select name="brand" class="turnintodropdown">
+						<option value="all">Показать все бренды</option>
+						<option value="Armin Storm">Armin Storm</option>
+						<option value="Arnold & Son">Arnold & Son</option>
+						<option value="Bell & Ross">Bell & Ross</option>
+						<option value="Breguet">Breguet</option>
+						<option value="Breitling">Breitling</option>
+						<option value="Chanel">Chanel</option>
+						<option value="Corum">Corum</option>
+						<option value="Denov">Denov</option>
+						<option value="HYt">HYt</option>
+						<option value="IWC">IWC</option>
+					</select>
+					<select name="people" class="turnintodropdown">
+						<option value="all">Коллекция для всех</option>
+						<option value="man">Для мужчин</option>
+						<option value="woman">Для женщин</option>
+					</select>
 				</form>
 			</div>
+	
+			<div class="box__content">
+	
+				<div class="box__item">
+					<div class="box__picture">
+						<img src="img/home_box_1.jpg" alt="" width="200" height="275">
+					</div>
+					<div class="box__text">
+						<h3>OMEGA <span>PLANET OCEAN 600M</span></h3>
+						<ul>
+							<li>Co‑Axial Master</li>
+							<li>Chronometer 43.5 mm</li>
+							<li>America's Cup</li>
+						</ul>
+						<div class="box__price">$ 13 999</div>
+						<a href="#" class="btn box__btn">Подробнее</a>
+					</div>
+				</div>
+	
+				<div class="box__item">
+					<div class="box__picture">
+						<img src="img/home_box_2.jpg" alt="" width="190" height="261">
+					</div>
+					<div class="box__text">
+						<h3>OMEGA <span>DE VILLE PRESTIGE</span></h3>
+						<ul>
+							<li>Co‑Axial Master</li>
+							<li>Chronometer Power</li>
+							<li>Reserve 39.5 mm</li>
+						</ul>
+						<div class="box__price">$ 18 499</div>
+						<a href="#" class="btn box__btn">Подробнее</a>
+					</div>
+				</div>
+	
+				<div class="box__item">
+					<div class="box__picture">
+						<img src="img/home_box_3.jpg" alt="" width="185" height="246">
+					</div>
+					<div class="box__text">
+						<h3>PATEK PHILIPPE <span>COMPLICATIONS</span></h3>
+						<ul>
+							<li>Self-winding</li>
+							<li>mechanical movement.</li>
+							<li>Caliber 240 HU</li>
+						</ul>
+						<div class="box__price">$ 36 999</div>
+						<a href="#" class="btn box__btn">Подробнее</a>
+					</div>
+				</div>
+	
+				<div class="box__item">
+					<div class="box__picture">
+						<img src="img/home_box_4.jpg" alt="" width="198" height="248">
+					</div>
+					<div class="box__text">
+						<h3>PATEK PHILIPPE <span>CALATRAVA</span></h3>
+						<ul>
+							<li>Mechanical manually </li>
+							<li>wound movement.</li>
+							<li>Caliber 215.</li>
+						</ul>
+						<div class="box__price">$ 18 999</div>
+						<a href="#" class="btn box__btn">Подробнее</a>
+					</div>
+				</div>
+	
+				<div class="box__item">
+					<div class="box__picture">
+						<img src="img/home_box_5.jpg" alt="" width="201" height="250">
+					</div>
+					<div class="box__text">
+						<h3>PATEK PHILIPPE <span>CALATRAVA</span></h3>
+						<ul>
+							<li>Mechanical manually </li>
+							<li>wound movement.</li>
+							<li>Caliber 215.</li>
+						</ul>
+						<div class="box__price">$ 18 499</div>
+						<a href="#" class="btn box__btn">Подробнее</a>
+					</div>
+				</div>
+	
+				<div class="box__item">
+					<div class="box__picture">
+						<img src="img/home_box_6.jpg" alt="" width="200" height="251">
+					</div>
+					<div class="box__text">
+						<h3>PATEK PHILIPPE <span>CALATRAVA</span></h3>
+						<ul>
+							<li>Mechanical manually </li>
+							<li>wound movement.</li>
+							<li>Caliber 215.</li>
+						</ul>
+						<div class="box__price">$ 18 699</div>
+						<a href="#" class="btn box__btn">Подробнее</a>
+					</div>
+				</div>
+				
+				<div class="box__item">
+					<div class="box__picture">
+						<img src="img/home_box_1.jpg" alt="" width="200" height="275">
+					</div>
+					<div class="box__text">
+						<h3>OMEGA <span>PLANET OCEAN 600M</span></h3>
+						<ul>
+							<li>Co‑Axial Master</li>
+							<li>Chronometer 43.5 mm</li>
+							<li>America's Cup</li>
+						</ul>
+						<div class="box__price">$ 13 999</div>
+						<a href="#" class="btn box__btn">Подробнее</a>
+					</div>
+				</div>
+	
+				<div class="box__item">
+					<div class="box__picture">
+						<img src="img/home_box_2.jpg" alt="" width="190" height="261">
+					</div>
+					<div class="box__text">
+						<h3>OMEGA <span>DE VILLE PRESTIGE</span></h3>
+						<ul>
+							<li>Co‑Axial Master</li>
+							<li>Chronometer Power</li>
+							<li>Reserve 39.5 mm</li>
+						</ul>
+						<div class="box__price">$ 18 499</div>
+						<a href="#" class="btn box__btn">Подробнее</a>
+					</div>
+				</div>
+	
+				<div class="box__item">
+					<div class="box__picture">
+						<img src="img/home_box_3.jpg" alt="" width="185" height="246">
+					</div>
+					<div class="box__text">
+						<h3>PATEK PHILIPPE <span>COMPLICATIONS</span></h3>
+						<ul>
+							<li>Self-winding</li>
+							<li>mechanical movement.</li>
+							<li>Caliber 240 HU</li>
+						</ul>
+						<div class="box__price">$ 36 999</div>
+						<a href="#" class="btn box__btn">Подробнее</a>
+					</div>
+				</div>
+	
+				<div class="box__item">
+					<div class="box__picture">
+						<img src="img/home_box_4.jpg" alt="" width="198" height="248">
+					</div>
+					<div class="box__text">
+						<h3>PATEK PHILIPPE <span>CALATRAVA</span></h3>
+						<ul>
+							<li>Mechanical manually </li>
+							<li>wound movement.</li>
+							<li>Caliber 215.</li>
+						</ul>
+						<div class="box__price">$ 18 999</div>
+						<a href="#" class="btn box__btn">Подробнее</a>
+					</div>
+				</div>
+	
+				<div class="box__item">
+					<div class="box__picture">
+						<img src="img/home_box_5.jpg" alt="" width="201" height="250">
+					</div>
+					<div class="box__text">
+						<h3>PATEK PHILIPPE <span>CALATRAVA</span></h3>
+						<ul>
+							<li>Mechanical manually </li>
+							<li>wound movement.</li>
+							<li>Caliber 215.</li>
+						</ul>
+						<div class="box__price">$ 18 499</div>
+						<a href="#" class="btn box__btn">Подробнее</a>
+					</div>
+				</div>
+	
+				<div class="box__item">
+					<div class="box__picture">
+						<img src="img/home_box_6.jpg" alt="" width="200" height="251">
+					</div>
+					<div class="box__text">
+						<h3>PATEK PHILIPPE <span>CALATRAVA</span></h3>
+						<ul>
+							<li>Mechanical manually </li>
+							<li>wound movement.</li>
+							<li>Caliber 215.</li>
+						</ul>
+						<div class="box__price">$ 18 699</div>
+						<a href="#" class="btn box__btn">Подробнее</a>
+					</div>
+				</div>
+	
+				<div class="box__item">
+					<div class="box__picture">
+						<img src="img/home_box_1.jpg" alt="" width="200" height="275">
+					</div>
+					<div class="box__text">
+						<h3>OMEGA <span>PLANET OCEAN 600M</span></h3>
+						<ul>
+							<li>Co‑Axial Master</li>
+							<li>Chronometer 43.5 mm</li>
+							<li>America's Cup</li>
+						</ul>
+						<div class="box__price">$ 13 999</div>
+						<a href="#" class="btn box__btn">Подробнее</a>
+					</div>
+				</div>
+	
+				<div class="box__item">
+					<div class="box__picture">
+						<img src="img/home_box_2.jpg" alt="" width="190" height="261">
+					</div>
+					<div class="box__text">
+						<h3>OMEGA <span>DE VILLE PRESTIGE</span></h3>
+						<ul>
+							<li>Co‑Axial Master</li>
+							<li>Chronometer Power</li>
+							<li>Reserve 39.5 mm</li>
+						</ul>
+						<div class="box__price">$ 18 499</div>
+						<a href="#" class="btn box__btn">Подробнее</a>
+					</div>
+				</div>
+	
+				<div class="box__item">
+					<div class="box__picture">
+						<img src="img/home_box_3.jpg" alt="" width="185" height="246">
+					</div>
+					<div class="box__text">
+						<h3>PATEK PHILIPPE <span>COMPLICATIONS</span></h3>
+						<ul>
+							<li>Self-winding</li>
+							<li>mechanical movement.</li>
+							<li>Caliber 240 HU</li>
+						</ul>
+						<div class="box__price">$ 36 999</div>
+						<a href="#" class="btn box__btn">Подробнее</a>
+					</div>
+				</div>
+	
+			</div>
+	
+			<div class="box__pagination">
+				<ul>
+					<li class="box__page box__page--active"><a>1</a></li>
+					<li class="box__page"><a href="#">2</a></li>
+					<li class="box__page"><a href="#">3</a></li>
+					<li class="box__page"><a href="#">4</a></li>
+					<li class="box__page"><a href="#">5</a></li>
+					<li class="box__page"><a href="#">6</a></li>
+					<li class="box__page"><a href="#">7</a></li>
+					<li class="box__page--more">...</li>
+					<li class="box__page"><a href="#">25</a></li>
+					<li class="next"><a href="#">&gt;</a></li>
+				</ul>
+			</div>
+	
 		</div>
 	
-		<div class="feedback__descr-wrapper">
+		<div class="box__descr-wrapper">
 			<div class="container">
-				<div class="feedback__descr">
-					<div class="feedback__text">
-						<p>Оперативно определить стоимость Ваших швейцарских часов 
-							Вы можете воспользовавшись услугой онлайн-оценки часов с дальнейшей скупкой.</p>
-						<p>Предоставляем информацию о стоимости часов и оказываемых услугах в кратчайшие сроки. Оценку производят квалифицированные специалисты в области элитных швейцарских часов. Предлагаем выгодные цены по скупке швейцарских часов.</p>
-					</div>
-					<div class="feebback__pic">
-						<img src="img/feedback_img.png" alt="" width="380" height="215">
-					</div>
+				<div class="box__descr">
+					<p><span>Купить швейцарские часы в Москве</span> можно в часовом центре Премиум. Часовой центр осуществляет продажу только оригинальных часов от самых известных швейцарских мануфактур.</p>
+					<p>Часы, предлагаемые часовым центром, обладают исключительным качеством, идеальным состоянием и полной заводской комплектацией. Каждая модель перед продажей тщательно проверяется на функциональность и исправность. Часовой центр продает часы только с чистой историей.</p>
 				</div>
 			</div>
 		</div>
 	
 	</section>
-	<!-- end buy-feedback -->
+	<!-- end buy-box -->
 
 	<!-- buy-info -->
 	<section class="info">
 		<div class="container">
 			<div class="info__content">
-	
+				
 				<div class="info__item">
 					<div class="info__pic">
-						<img src="img/buy_info_1.jpg" alt="" width="470" height="620">
+						<img src="img/buy_info_1.jpg" alt="" width="470" height="747">
 					</div>
 					<div class="info__text">
-						<h2>Выгодная часовая скупка <br><span>в Москве</span></h2>
-						<p>Часовой центр «Премиум» предлагает всем желающим обналичить свой VIP-аксессуар и получить за него достойное
-							денежное вознаграждение. Это выигрышный вариант для всех жителей Москвы, которым срочно требуется
-							внушительная сумма для расширения дела, обустройства дома, первоклассное обучение детей. Каким бы ни был
-							повод продажи фирменного измерителя времени, скупка золотых швейцарских часов в нашем салоне – самая быстрая
-							и выгодная с финансовой точки зрения альтернатива займу в банке или в микрофинансовой организации.</p>
-						<p>Сумма выкупа устанавливается по результатам объективной экспертизы, а предварительную цену прибора можно
-							узнать на официальном сайте. Кроме того, онлайн-оценка работает в приложении WhatsApp и Viber. Чтобы
-							воспользоваться этой бесплатной услугой, необходимо лишь назвать консультанту бренд и модель устройства.
-							Прикрепленная к запросу фотография изделия повысит точность предварительного экспертного заключения.</p>
+						<h2>Купить швейцарские часы <span>выгодно и недорого</span></h2>
+						<p>Желание купить часы возникает по разным причинам. Главным образом, это увлечение коллекционированием, подтверждение статуса в обществе или необходимость определения времени классическим способом. Важно отметить, что все часы в часовом центре в Москве – оригинальные. Мы не имеем дело с подделками.</p>
+						<p>Покупая свои первые часы, следует довериться профессионалам. Кроме внешнего дизайна, на который покупатель обращает внимание в первую очередь, существует механизм, который находится внутри корпуса и обладает функционалом. Кроме того, что калибры бывают механическими или кварцевыми, они могут обладать как минимальным набором функций, так и усложнениямиВ качестве усложнения в часах используются все функции, кроме индикации времени и даты. Это может быть хронограф, индикатор фазы луны или запаса хода, вечный календарь, уравнение времени, репетир и жакемары. Механизм часов может быть ажурным, или скелетированным.</p>
+						<p>Среди многообразия измерителей времени можно выделить несколько групп: спортивные, классические и кэжуал. Спортивные часы предназначены для активного образа жизни, обладают повышенными характеристиками водостойкости и прочности по отношению к внешней среде.</p>
+						<p>Классические швейцарские часы покупают, как правило, для особых случаев, они более утончённые и изящные. Их носят под строгий костюм. Именно классические часы зачастую изготавливают из драгоценных металлов с инкрустацией камнями. Их функции усложняются, так как классика – признак статуса.</p>
+						<p>Стиль кэжуал – относительно новое понятие в сфере часов. Изобретение новых материалов порождает эксперименты по необычной комбинации элементов. Такой подход дает возможность получить современные часы с высокими характеристиками и оригинальным дизайном. Подобного рода часы выбирают неординарные люди, часы хорошо сочетаются с повседневной одеждой и уместны в большинстве случаев.</p>
 					</div>
 				</div>
 	
 				<div class="info__item">
 					<div class="info__text">
-						<h2>Скупка швейцарских часов: <span>памятка клиенту</span></h2>
-						<p>Часовой центр «Премиум» готов купить у вас брендовую продукцию любой торговой марки и года изготовления.
-							Салон заинтересован во всех исправных подлинниках, независимо от коллекции, к которой те принадлежат.
-							Предусмотрена скупка элитных часов в Москве как новых хронометров, так и моделей уже бывших в использовании.
-						</p>
-						<p>Мы готовы приобрести измерители времени, изготовленные из разных материалов. Но естественно, цена
-							платиновых и золотых лотов будет значительно выше, чем стоимость приборов из нержавеющей стали.</p>
-						<p>Сумма, которую вы получите при скупке швейцарских часов, зависит от технического состояния изделия, срока
-							его эксплуатации, а также особенностей оформления. Если вы хотите максимально выгодно продать измеритель
-							времени, обязательно возьмите с собой в бутик Premium не только сам аксессуар, но и фирменную упаковку,
-							сертификат, сервисный талон (если такой имеется).</p>
+						<h2>Пополнение коллекции <span>швейцарских часов</span></h2>
+						<p>Покупка швейцарских часов в часовом центре Премиум в Москве, независимо от того, являетесь ли вы коллекционером или просто решили стать обладателем элитного аксессуара, очень выгодна. Первым и самым весомым аргументом в пользу покупки часов в часовом центре является цена на швейцарские изделия.</p>
+						<p>Любая понравившаяся модель оригинальных швейцарских часов на витрине нашего часового центра стоит на порядок меньше, чем аналогичный экземпляр в фирменном бутике мануфактуры. Уже давно нивелировано мнение, что вещи б/у плохого качества. Стереотип о новой продукции с пленочкой в заводской упаковке и ее преимуществе давно разрушен. Ведь часовой центр отвечают своей репутацией, продавая швейцарские часы. И, к тому же, большинство швейцарских часов в часовом центре являются-таки новыми, даже не бывшими в употреблении. Эти товары поступают в часовой центр от клиентов, у которых есть и другие часы, а эти им попросту не нужны.</p>
+						<p>Часы – отличный подарок. Купить швейцарские часы в Москве можно не только для себя, но и для близкого человека. Уверены, он оценит такой поступок по достоинству. Подарок, который всегда при вас, напоминает о том человеке, который его подарил, навеивает приятные воспоминания и заряжает позитивом. Независимо от целей покупки часов, обращайтесь к нам, и наши специалисты помогут вам сделать лучший выбор.</p>
 					</div>
 					<div class="info__pic">
-						<img src="img/buy_info_2.jpg" alt="" width="570" height="700">
-					</div>
-				</div>
-	
-				<div class="info__item">
-					<div class="info__pic">
-						<img src="img/buy_info_3.jpg" alt="" width="470" height="650">
-					</div>
-					<div class="info__text">
-						<h2>Как осуществляется <span>скупка элитных часов?</span></h2>
-						<ul>
-							<li>Ознакомившись с условиями сотрудничества, клиент посещает нашу
-								мастерскую в Москве. Эксперт часового центра тщательно проверяет исправность механизма, а также
-								подлинность лота. Затем при помощи новейшего профессионального оборудования специалист изучает
-								хронометр и определяет его ценность.</li>
-							<li>Установленная в результате исследования сумма вас устраивает? Тогда происходит непосредственно скупка
-								часов, закрепленная юридически. Владелец аксессуара подписывает соответствующий договор. Важным условием
-								является совершеннолетний возраст и наличие любого документа, подтверждающего личность.</li>
-							<li>Осуществляется передача имущественных прав и оплата наличных бывшему хозяину.</li>
-						</ul>
-						<p class="bold">Срочная скупка часов в часовом центре «Премиум» – это удобно, быстро и надежно. Убедитесь сами!</p>
+						<img src="img/buy_info_2.jpg" alt="" width="570" height="835">
 					</div>
 				</div>
 	
@@ -233,9 +438,9 @@
 				</div>
 
 				<ul class="footer__menu">
-					<li><a href="404.html">Купить часы</a></li>
+					<li><a href="buy.html">Купить часы</a></li>
 					<li><a href="sell.html">Продать часы</a></li>
-					<li><a href="buy.html">Скупка часов</a></li>
+					<li><a href="buyup.html">Скупка часов</a></li>
 					<li><a href="contact.html">Контакты</a></li>
 					<li><a href="jewel.html">Ювелирные украшения</a></li>
 					<li><a href="repair.html">Ремонт часов</a></li>
@@ -284,8 +489,25 @@
 	</a>
 </div>
 
+<div id="subscribe">
+	<div class="container">
+		<form action="">
+			<p>Подписаться на почтовую рассылку</p>
+			<div>
+				<input type="email" name="subscr_mail" placeholder="Email" required>
+				<button type="submit" class="btn">Подписаться</button>
+			</div>
+			<button type="button" class="btn-close">
+				<svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 24 24" >
+					<path d="M13 12l5-5-1-1-5 5-5-5-1 1 5 5-5 5 1 1 5-5 5 5 1-1z" fill="#d1d1d0"></path>
+				</svg>
+			</button>
+		</form>
+	</div>
+</div>
+
 <script defer src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script defer src="js/script.js?v=1"></script>
+<script defer src="js/script.js?v=2"></script>
 </body>
 </html>
 <!-- end footer -->
