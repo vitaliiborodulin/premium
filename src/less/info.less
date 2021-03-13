@@ -70,6 +70,9 @@
 			&:nth-child(3)::before {
 				content: '3';
 			}
+			&:nth-child(4)::before {
+				content: '4';
+			}
 		}
 
 		p, li {
@@ -102,6 +105,17 @@
 }
 
 .home {
+	.info__text {
+		li {
+			&::before {
+				border: none;
+				content: '\2014';
+			}
+		}
+	}
+}
+
+.buy {
 	.info__item:nth-child(1) {
 		.info__pic {
 			align-self: flex-start;
