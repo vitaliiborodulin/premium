@@ -1,0 +1,54 @@
+.factors {
+	padding-top: 24px;
+	padding-bottom: 33px;
+
+	background-color: #ece8e5;
+
+	&__content {
+		.row-flex();
+		align-items: center;
+		overflow-x: hidden;
+	}
+
+	&__text {
+		.col();
+		.size(8);
+		.size-sm(9);
+		line-height: 24px;
+
+		p {
+			margin-bottom: 25px;
+		}
+
+		.bold {
+			font-weight: 500;
+			margin-bottom: 17px;
+		}
+
+		li {
+			margin-bottom: 4px;
+			padding-left: 30px;
+			position: relative;
+			&::before {
+				position: absolute;
+				content: '\2014';
+				left: 0;
+				top: 0;
+			}
+		}
+	}
+
+	&__pic {
+		.col();
+		.size(4);
+		.size-sm(3);
+		
+		text-align: center;
+
+		img {
+			opacity: 0.6;
+			transform: rotate(-28deg);
+			// .sm(width, 100px);
+		}
+	}
+}
