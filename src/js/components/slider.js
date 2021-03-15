@@ -1,20 +1,38 @@
-$('.slider__list').owlCarousel({
-	loop:true,
-	nav:true,
-	margin:10,
-	dots: false,
-	autoplay:true,
-	autoplayTimeout:5000,
-	autoplayHoverPause:true,
-	responsive:{
-			0:{
-				items:1,
-			},
-			780:{
-				items:2
-			},
-			1000:{
-				items:3
+$('.slider__list').slick({
+	slidesToShow: 3,
+	slidesToScroll: 1,
+	responsive: [
+		{
+			breakpoint: 992,
+      settings: {
+        slidesToShow: 2
+      }
+		},
+		{
+			breakpoint: 768,
+      settings: {
+        slidesToShow: 1
+      }
 		}
-	}
-})
+	]
+});
+
+$('.product__slider-main').slick({
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	arrows: false,
+	lazyLoad: 'ondemand',
+	infinite: false,
+	asNavFor: '.product__slider-nav'
+});
+
+$('.product__slider-nav').slick({
+	slidesToShow: 5,
+	slidesToScroll: 1,
+	asNavFor: '.product__slider-main',
+	arrows: false,
+	// centerMode: true,
+	infinite: false,
+	focusOnSelect: true,
+	lazyLoad: 'ondemand'
+});

@@ -1,6 +1,6 @@
 //= ../../node_modules/jquery-form-styler/dist/jquery.formstyler.min.js
 //= ../../node_modules/jquery.maskedinput/src/jquery.maskedinput.js
-//= ../../node_modules/owl.carousel/dist/owl.carousel.min.js
+//= ../../node_modules/slick-carousel/slick/slick.min.js
 
 $(function(){
 	
