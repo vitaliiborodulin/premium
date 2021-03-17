@@ -16,10 +16,16 @@
 @offset_sm_one_side: (@offset_sm / 2);
 
 @fields: 20px;
+@fields_sm: 10px;
 
 .wrapper-full(){
     padding-left: @fields;
     padding-right: @fields;
+
+    .sm-block({
+        padding-left: @fields_sm;
+        padding-right: @fields_sm;
+    });
 }
 
 .row-offsets(){
