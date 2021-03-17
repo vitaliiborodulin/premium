@@ -21,6 +21,7 @@ $(function(){
 
 	$('input[type="tel"]').mask("+7 (999) 999-9999");
 
+	//= components/burger.js
 	//= components/slider.js
 	//= components/subscribe.js
 

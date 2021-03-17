@@ -1,18 +1,45 @@
 .header {
 	padding-top: 26px;
 	padding-bottom: 20px;
+	.sm(padding-bottom, 55px);
+
+	&__content {
+		position: relative;
+		.sm-block({
+			display: flex;
+		})
+	}
 
 	&__top {
 		.row-flex();
+		margin-bottom: 20px;
+		flex-wrap: nowrap;
 		align-items: center;
+	}
+
+	&__bottom {
+		.sm-block({
+			order: -1;
+		});
 	}
 
 	&__city {
 		.col();
 		.size(4);
-		.size-sm(12);
-		margin-bottom: 20px;
-		.sm(text-align, center);
+		// .size-sm(12);
+		display: flex;
+		flex-direction: column;
+		// margin-bottom: 20px;
+		// .sm(text-align, center);
+		.sm-block({
+			width: auto;
+			margin: 0;
+			position: absolute;
+			right: 0;
+			top: 20px;
+			align-items: flex-end;
+			
+		});
 		
 		select {
 			background: #fff;
@@ -22,21 +49,30 @@
 			font-size: 16px;
 			font-weight: 600;
 			text-transform: uppercase;
+			.sm(font-size, 12px);
+		}
+
+		.jq-selectbox__select {
+			padding: 0 28px 0 10px;
 		}
 
 	}
 
 	&__adress {
-		margin-top: 5px;
+		// margin-top: 5px;
 		font-size: 14px;
-		white-space: nowrap;
+		// white-space: nowrap;
+		.sm-block({
+			order: -1;
+			font-size: 12px;
+		});
 	}
 
 	&__logo {
 		.col();
 		.size(4);
-		.size-sm(12);
-		margin-bottom: 20px;
+		// .size-sm(12);
+		// margin-bottom: 20px;
 		font-size: 30px;
 		font-weight: 600;
 		line-height: 0.1em;
@@ -45,15 +81,28 @@
 		color: #a6987c;
 		text-decoration: none;
 		white-space: nowrap;
+		.sm-block({
+			position: absolute;
+			left: 28px;
+			top: 9px;
+			// order: -1;
+		});
 	}
 
 	&__contact {
 		.col();
 		.size(4);
 		.size-sm(12);
-		margin-bottom: 20px;
+		// margin-bottom: 20px;
 		text-align: right;
-		.sm(text-align, center);
+		// .sm(text-align, center);
+		.sm-block({
+			position: absolute;
+			top: 0;
+			right: 0;
+			margin-left: 0;
+			margin-right: 0;
+		});
 	}
 
 	&__tel {
@@ -64,12 +113,23 @@
 		font-size: 16px;
 		font-weight: 600;
 		white-space: nowrap;
+		.sm-block({
+			position: absolute;
+			right: 0;
+			top: -3px;
+			font-size: 14px;
+		});
 	}
 
 	&__time {
 		position: relative;
 		font-size: 14px;
 		white-space: nowrap;
+		.sm-block({
+			position: absolute;
+			left: -18px;
+			top: 42px;
+		});
 
 		&::before {
 			top: 50%;
@@ -89,7 +149,44 @@
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
-		.sm(flex-direction, column);
+
+		.sm-block({
+			transform: translateX(-105%);
+			display: none;
+			transform-origin: right top;
+			transition: all 0.5s ease-in-out;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			position: fixed;
+			left: 0;
+			top: 0;
+			z-index: 110;
+
+			width: 100%;
+			height: 100%;
+			padding: 40px;
+			// color: @textcolor;
+			background-color: @white;
+
+			li {
+				text-align: center;
+				width: 100%;
+				margin: 0;
+				padding-top: 20px;
+				padding-bottom: 20px;
+				border-top: 1px solid #555;
+				&:last-child {
+					border-bottom: 1px solid #555;
+				}
+			}
+
+			&.header__menu--open {
+				// margin-left: -10px;
+				transform: translateX(0);
+			}
+		});
 
 		li {
 			margin: 0 25px;
@@ -108,5 +205,90 @@
 				color: #a8927b;
 			}
 		}
+	}
+
+	&__burger {
+		@toggler-part-height: 1px;
+		@toggler-part-bg-color: @textcolor;
+		@transition-time: 0.5s;
+
+		display: none;
+		.sm-block({
+			display: block;
+			display: flex;
+		});
+		// position: relative;
+		z-index: 13;
+		align-items: center;
+		justify-content: center;
+		width: 32px;
+		height: 19px;
+		user-select: none;
+		cursor: pointer;
+
+		&:focus {
+			outline: none;
+		}
+
+		& > span {
+			display: inline-block;
+			width: 100%;
+			height: @toggler-part-height;
+			background: @toggler-part-bg-color;
+			position: relative;
+			transition: background @transition-time @transition-time;
+			border-radius: 30px;
+
+			&:before,
+			&:after {
+				content: '';
+				position: absolute;
+				left: 0;
+				height: @toggler-part-height;
+				background: @toggler-part-bg-color;
+				transform-origin: 50% 50%;
+				transition: top @transition-time @transition-time, transform @transition-time;
+				border-radius: 30px;
+			}
+
+			&:before {
+				width: 100%;
+				top: -8px;
+			}
+
+			&:after {
+				width: 50%;
+				top: 8px;
+			}
+		}
+
+		&--close {
+			// position: relative;
+			position: absolute;
+			left: 10px;
+			top: 0;
+			z-index: 111;
+
+			> span {
+				transition: background @transition-time;
+				background: transparent;
+
+				&:before,
+				&:after {
+					width: 100%;
+					transition: top @transition-time, transform @transition-time @transition-time;
+					top: 0;
+					color: @textcolor;
+				}
+
+				&:before {
+					transform: rotate3d(0, 0, 1, 45deg);
+				}
+
+				&:after {
+					transform: rotate3d(0, 0, 1, -45deg);
+				}
+			}
+  	}
 	}
 }
