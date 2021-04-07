@@ -501,7 +501,7 @@
 		<a class="popup__city" href="https://krasnodar.lombard-premium.ru">Краснодар</a>
 		<a class="popup__city" href="https://krasnoyarsk.lombard-premium.ru">Красноярск</a>
 		<a class="popup__city" href="https://lombard-premium.by">Минск</a>
-		<span class="popup__city popup__city--active">Москва</span>
+		<a class="popup__city popup__city--active">Москва</a>
 		<a class="popup__city" href="https://nijniy-novgorod.lombard-premium.ru">Нижний Новгород</a>
 		<a class="popup__city" href="https://novosibirsk.lombard-premium.ru">Новосибирск</a>
 		<a class="popup__city" href="https://lombard-premium.kz">Нур-Султан (Астана)</a>
@@ -530,7 +530,11 @@
 
 <div style="display: none;" id="callback" class="popup">
 	<div class="popup__content">
-		callback
+		<form method="post" class="popup__form">
+			<label for="popup_tel">Телефон</label>
+			<input type="tel" name="popup_tel" id="popup_tel" placeholder="+7 (xxx) xxx-xxxx" required>
+			<button type="submit" class="btn popup__btn">Отправить заявку</button>
+		</form>
 	</div>
 </div>
 
