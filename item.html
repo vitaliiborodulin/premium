@@ -10,10 +10,7 @@
 	<link rel="icon" href="favicon.png" type="image/png">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 
-	<!-- <link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap" rel="stylesheet"> -->
-
-	<link rel="stylesheet" href="css/styles.css?v=9">
+	<link rel="stylesheet" href="css/styles.css?v=10">
 
 </head>
 
@@ -263,7 +260,45 @@
 
 <div style="display: none;" id="online" class="popup">
 	<div class="popup__content">
-		online
+		<form class="popup__form" method="post" enctype="multipart/form-data">
+			<div class="popup__fieldset-wrapper">
+				<fieldset>
+					<div class="popup__title">Бренд</div>
+					<select name="popup_brand" id="popup_brand">
+						<option value="A. lange & SOhne">A. lange & SOhne</option>
+						<option value="Armin Storm">Armin Storm</option>
+						<option value="Arnold & Son">Arnold & Son</option>
+						<option value="Bell & Ross">Bell & Ross</option>
+						<option value="Breguet">Breguet</option>
+						<option value="Breitling">Breitling</option>
+						<option value="Chanel">Chanel</option>
+						<option value="Corum">Corum</option>
+						<option value="Denov">Denov</option>
+						<option value="HYt">HYt</option>
+						<option value="IWC">IWC</option>
+					</select>
+				</fieldset>
+				<fieldset>
+					<div class="popup__title">Комплектация</div>
+					<div class="popup__checkbox-wrapper">
+						<div>
+							<input type="checkbox" name="popup_box" id="popup_box">
+							<label for="popup_box">Коробка</label>
+						</div>
+						<div>
+							<input type="checkbox" name="popup_doc" id="popup_doc">
+							<label for="popup_doc">Документы</label>
+						</div>
+					</div>
+				</fieldset>
+				<fieldset>
+					<div class="popup__title">Телефон</div>
+					<input type="tel" name="popup_tel" placeholder="+7 (xxx) xxx-xxxx" required>
+				</fieldset>
+			</div>
+				<input type="file" name="pf" id="popup__file" multiple="true" accept="image/*,image/jpeg">
+			<button type="submit" class="btn popup__btn">Отправить заявку</button>
+		</form>
 	</div>
 </div>
 
