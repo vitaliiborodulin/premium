@@ -1,5 +1,6 @@
 #sticky-bar {
-	display: flex;
+	display: none;
+	
 	justify-content: center;
 	align-items: center;
 	position: fixed;
@@ -12,6 +13,10 @@
 	padding: 8px;
 	transition: top .3s ease-in-out;
 	z-index: 90;
+}
+
+.sticky-bar--active {
+	display: flex!important;
 }
 
 @media (max-width: 1024px) {

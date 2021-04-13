@@ -5,18 +5,7 @@
 			<div class="footer__top">
 
 				<div class="footer__city">
-					<form action="#">
-						<select name="city">
-							<option value="Москва">Москва</option>
-							<option value="Алматы">Алматы</option>
-							<option value="Баку">Баку</option>
-							<option value="Ереван">Ереван</option>
-							<option value="Варшава">Варшава</option>
-							<option value="Вильнюс">Вильнюс</option>
-							<option value="Киев">Киев</option>
-							<option value="Воронеж">Воронеж</option>
-						</select>
-					</form>
+					<a href="javascript:;" data-fancybox data-src="#city">Москва</a>
           <div class="footer__adress">Красная площадь 3</div>
 				</div>
 
@@ -80,7 +69,113 @@
 	</a>
 </div>
 
-<div id="subscribe">
+<div style="display: none;" id="city" class="popup">
+	<div class="popup__content">
+		<a class="popup__city" href="https://almaty.lombard-premium.kz">Алматы</a>
+		<a class="popup__city" href="https://turkmenistan.lombard-premium.com">Ашхабад</a>
+		<a class="popup__city" href="https://azerbaijan.lombard-premium.com">Баку</a>
+		<a class="popup__city" href="https://barnaul.lombard-premium.ru">Барнаул</a>
+		<a class="popup__city" href="https://kyrgyzstan.lombard-premium.com">Бишкек</a>
+		<a class="popup__city" href="https://poland.lombard-premium.com">Варшава</a>
+		<a class="popup__city" href="https://lithuania.lombard-premium.com">Вильнюс</a>
+		<a class="popup__city" href="https://vladivostok.lombard-premium.ru">Владивосток</a>
+		<a class="popup__city" href="https://volgograd.lombard-premium.ru">Волгоград</a>
+		<a class="popup__city" href="https://voronezh.lombard-premium.ru">Воронеж</a>
+		<a class="popup__city" href="https://dnepr.lombard-premium.com.ua">Днепр</a>
+		<a class="popup__city" href="https://tajikistan.lombard-premium.com">Душанбе</a>
+		<a class="popup__city" href="https://ekaterinburg.lombard-premium.ru">Екатеринбург</a>
+		<a class="popup__city" href="https://armenia.lombard-premium.com">Ереван</a>
+		<a class="popup__city" href="https://izhevsk.lombard-premium.ru">Ижевск</a>
+		<a class="popup__city" href="https://irkutsk.lombard-premium.ru">Иркутск</a>
+		<a class="popup__city" href="https://kazan.lombard-premium.ru">Казань</a>
+		<a class="popup__city" href="https://kaliningrad.lombard-premium.ru">Калининград</a>
+		<a class="popup__city" href="https://lombard-premium.com.ua">Киев</a>
+		<a class="popup__city" href="https://moldova.lombard-premium.com">Кишинёв</a>
+		<a class="popup__city" href="https://krasnodar.lombard-premium.ru">Краснодар</a>
+		<a class="popup__city" href="https://krasnoyarsk.lombard-premium.ru">Красноярск</a>
+		<a class="popup__city" href="https://lombard-premium.by">Минск</a>
+		<a class="popup__city popup__city--active">Москва</a>
+		<a class="popup__city" href="https://nijniy-novgorod.lombard-premium.ru">Нижний Новгород</a>
+		<a class="popup__city" href="https://novosibirsk.lombard-premium.ru">Новосибирск</a>
+		<a class="popup__city" href="https://lombard-premium.kz">Нур-Султан (Астана)</a>
+		<a class="popup__city" href="https://odessa.lombard-premium.com.ua">Одесса</a>
+		<a class="popup__city" href="https://omsk.lombard-premium.ru">Омск</a>
+		<a class="popup__city" href="https://perm.lombard-premium.ru">Пермь</a>
+		<a class="popup__city" href="https://latvia.lombard-premium.com">Рига</a>
+		<a class="popup__city" href="https://rostov-na-donu.lombard-premium.ru">Ростов-на-Дону</a>
+		<a class="popup__city" href="https://samara.lombard-premium.ru">Самара</a>
+		<a class="popup__city" href="https://sankt-peterburg.lombard-premium.ru">Санкт-Петербург</a>
+		<a class="popup__city" href="https://saratov.lombard-premium.ru">Саратов</a>
+		<a class="popup__city" href="https://simferopol.lombard-premium.ru">Симферополь</a>
+		<a class="popup__city" href="https://sochi.lombard-premium.ru">Сочи</a>
+		<a class="popup__city" href="https://stavropol.lombard-premium.ru">Ставрополь</a>
+		<a class="popup__city" href="https://estonia.lombard-premium.com">Таллин</a>
+		<a class="popup__city" href="https://uzbekistan.lombard-premium.com">Ташкент</a>
+		<a class="popup__city" href="https://georgia.lombard-premium.com">Тбилиси</a>
+		<a class="popup__city" href="https://tyumen.lombard-premium.ru">Тюмень</a>
+		<a class="popup__city" href="https://ufa.lombard-premium.ru">Уфа</a>
+		<a class="popup__city" href="https://khabarovsk.lombard-premium.ru">Хабаровск</a>
+		<a class="popup__city" href="https://kharkov.lombard-premium.com.ua">Харьков</a>
+		<a class="popup__city" href="https://finland.lombard-premium.com">Хельсинки</a>
+		<a class="popup__city" href="https://chelyabinsk.lombard-premium.ru">Челябинск</a>
+	</div>
+</div>
+
+<div style="display: none;" id="callback" class="popup">
+	<div class="popup__content">
+		<form method="post" class="popup__form">
+			<label for="popup_tel">Телефон</label>
+			<input type="tel" name="popup_tel" id="popup_tel" placeholder="+7 (xxx) xxx-xxxx" required>
+			<button type="submit" class="btn popup__btn">Отправить заявку</button>
+		</form>
+	</div>
+</div>
+
+<div style="display: none;" id="online" class="popup">
+	<div class="popup__content">
+		<form class="popup__form" method="post" enctype="multipart/form-data">
+			<div class="popup__fieldset-wrapper">
+				<fieldset>
+					<div class="popup__title">Бренд</div>
+					<select name="popup_brand" id="popup_brand">
+						<option value="A. lange & SOhne">A. lange & SOhne</option>
+						<option value="Armin Storm">Armin Storm</option>
+						<option value="Arnold & Son">Arnold & Son</option>
+						<option value="Bell & Ross">Bell & Ross</option>
+						<option value="Breguet">Breguet</option>
+						<option value="Breitling">Breitling</option>
+						<option value="Chanel">Chanel</option>
+						<option value="Corum">Corum</option>
+						<option value="Denov">Denov</option>
+						<option value="HYt">HYt</option>
+						<option value="IWC">IWC</option>
+					</select>
+				</fieldset>
+				<fieldset>
+					<div class="popup__title">Комплектация</div>
+					<div class="popup__checkbox-wrapper">
+						<div>
+							<input type="checkbox" name="popup_box" id="popup_box">
+							<label for="popup_box">Коробка</label>
+						</div>
+						<div>
+							<input type="checkbox" name="popup_doc" id="popup_doc">
+							<label for="popup_doc">Документы</label>
+						</div>
+					</div>
+				</fieldset>
+				<fieldset>
+					<div class="popup__title">Телефон</div>
+					<input type="tel" name="popup_tel" placeholder="+7 (xxx) xxx-xxxx" required>
+				</fieldset>
+			</div>
+				<input type="file" name="pf" id="popup__file" multiple="true" accept="image/*,image/jpeg">
+			<button type="submit" class="btn popup__btn">Отправить заявку</button>
+		</form>
+	</div>
+</div>
+
+<!-- <div id="subscribe">
 	<div class="container">
 		<form action="#" name="subscr">
 			<p>Подписаться на почтовую рассылку</p>
@@ -95,9 +190,8 @@
 			</button>
 		</form>
 	</div>
-</div>
+</div> -->
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="js/script.js?v=6"></script>
+<script src="js/script.js?v=7"></script>
 </body>
 </html>

@@ -29,6 +29,7 @@
 		// .size-sm(12);
 		display: flex;
 		flex-direction: column;
+		align-items: flex-start;
 		// margin-bottom: 20px;
 		// .sm(text-align, center);
 		.sm-block({
@@ -40,20 +41,20 @@
 			align-items: flex-end;
 			
 		});
-		
-		select {
-			background: #fff;
-			outline: none;
-			border: none;
-			cursor:pointer;
+
+		a {
+			padding: 8px 0;
+			padding-right: 18px;
 			font-size: 16px;
 			font-weight: 600;
-			text-transform: uppercase;
-			.sm(font-size, 12px);
-		}
+			color: inherit;
+			text-decoration: none;
+			transition: color 0.3s ease;
+			background: url(../img/triangle.svg) no-repeat center right;
 
-		.jq-selectbox__select {
-			padding: 0 28px 0 10px;
+			&:hover {
+				color: @accent;
+			}
 		}
 
 	}
@@ -87,6 +88,7 @@
 			top: 9px;
 			// order: -1;
 		});
+		.xs(font-size, 24px);
 	}
 
 	&__contact {
