@@ -1,6 +1,6 @@
 .popup {
-	width: 480px;
-	.sm(width, 100%);
+	max-width: 480px;
+	// .sm(width, 100%);
 	padding: 32px;
 
 	color: @textcolor;
@@ -14,7 +14,7 @@
 		justify-content: center;
 	}
 
-	&__city {
+	&__item {
 		font-size: 15px;
 		color: inherit;
 		text-decoration: none;
@@ -29,7 +29,7 @@
 			cursor: default;
 		}
 
-		&:not(.popup__city--active):hover {
+		&:not(.popup__item--active):hover {
 			color: @accent;
 			text-decoration: underline;
 			// font-weight: 400;

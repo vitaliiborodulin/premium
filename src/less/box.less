@@ -1,6 +1,6 @@
 .box {
 
-	&__filter {
+	&__wrapper {
 		display: flex;
 		align-items: center;
 		.md-block({
@@ -17,19 +17,32 @@
 			font-weight: 600;
 			text-transform: uppercase;
 		}
-		form {
+		& > div {
 			display: flex;
 			align-items: center;
 			.sm(flex-wrap, wrap);
 
-			select {
+			.box__filter {
 				padding: 10px 15px;
+        padding-right: 18px;
 				min-width: 220px;
 				border: 1px solid #ddd;
 				text-transform: uppercase;
-				background: transparent;
+				// background: transparent;
 				margin: 0 10px;
 				margin-bottom: 10px;
+        cursor: pointer;
+        text-decoration: none;
+        color: inherit;
+        transition: color 0.3s ease;
+			  background: url(../img/triangle.svg) no-repeat;
+        background-position-y: center;
+        background-position-x: 98%;
+
+        &:hover {
+          border-color: @accent;
+          color: @accent;
+        }
 
 				.md(width, 280px);
 				.sm(width, 100%);
